@@ -19,3 +19,9 @@ Read the script first: it is short.
 paste one public key and lets only that key log in to administrator accounts (empty = none). Read
 `install-ssh.ps1` first: the top lines say what it does and how to undo it. Download both files into one folder,
 double-click `install-ssh.cmd`, press **Yes**, paste the key when asked.
+
+## check-ssh-status (read-only)
+
+After `install-ssh`, if the other computer still cannot connect: `check-ssh-status.cmd` shows whether sshd runs
+and listens, the network profile, the Windows Firewall rules for SSH and any security software with its own
+firewall (Norton and the like). It changes nothing and saves `aibox-ssh-status.txt` on the Desktop.
